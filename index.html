@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>💖 Date Proposal Planner</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<body>
+
+<div id="hearts"></div>
+
+<div id="balloons"></div>
+
+<div id="stars"></div>
+
+<div id="petals"></div>
+
+<div class="container">
+    <div class="progressContainer">
+
+    <div class="progressTop">
+
+        <span id="stepLabel">Step 1 of 7</span>
+
+        <span id="stepPercent">14%</span>
+
+    </div>
+
+    <div class="stepProgress">
+
+        <div id="stepProgressFill"></div>
+
+    </div>
+
+</div>
+    
+<!-- ========================= -->
+<!-- STEP 1 -->
+<!-- ========================= -->
+
+<section
+class="card active"
+id="step1">
+
+<h1>
+
+Will you go on a date with me? 🥺
+
+</h1>
+
+<p>
+
+I already picked the playlist...
+
+Don't break my heart 💖
+
+</p>
+
+<div class="buttonArea">
+
+<button id="yesBtn">
+
+YES 💕
+
+</button>
+
+<button id="noBtn">
+
+NO 🙈
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STEP 2 -->
+<!-- ========================= -->
+
+<section
+class="card"
+id="step2">
+
+<h1>
+
+Wait... Why No? 🤨
+
+</h1>
+
+<p>
+
+Choose your reason.
+
+</p>
+
+<label>
+
+<input type="checkbox">
+
+My internet is slow 🐌
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+I accidentally clicked 😭
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+I can't see how awesome you are 😎
+
+</label>
+
+<button
+id="surveyBtn"
+class="mainBtn">
+
+Submit
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- STEP 3 -->
+<!-- ========================= -->
+
+<section
+class="card"
+id="step3">
+
+<h1>
+
+OMG 😳💖
+
+</h1>
+
+<p>
+
+You actually said YES!!
+
+</p>
+
+<img
+
+class="gif"
+
+src="https://media.tenor.com/0AVbKGY_MxMAAAAC/cute-love.gif">
+
+<button
+
+id="step3Btn"
+
+class="mainBtn">
+
+Next ➜
+
+</button>
+
+</section>
+
+<!-- STEP 4, STEP 5, STEP 6, STEP 7 -->
+
+<!-- Continue Next -->
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<!-- ========================= -->
+<!-- STEP 4 -->
+<!-- ========================= -->
+
+<section class="card" id="step4">
+
+<h1>Security Check 🤖</h1>
+
+<p>Verify you are human and not a heartless robot.</p>
+
+<div class="captchaBox">
+
+<input type="checkbox" id="captcha">
+
+<label for="captcha">
+
+I promise to look cute and never cancel the plan.
+
+</label>
+
+</div>
+
+<div class="loader">
+
+<div id="loaderBar"></div>
+
+</div>
+
+<p id="captchaStatus"></p>
+
+<button
+
+id="captchaBtn"
+
+class="mainBtn"
+
+disabled>
+
+Next ➜
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- STEP 5 -->
+<!-- ========================= -->
+
+<section class="card" id="step5">
+
+<h1>When are you free? 🗓️</h1>
+
+<input
+
+type="date"
+
+id="dateInput">
+
+<select id="timeInput">
+
+<option value="">Choose Time</option>
+
+<option value="6:00 PM">
+
+6:00 PM — Eating with the grandmas 👵
+
+</option>
+
+<option value="7:30 PM">
+
+7:30 PM — Certified rizz hour 😎
+
+</option>
+
+<option value="9:00 PM">
+
+9:00 PM — Late night menace mode 🌙
+
+</option>
+
+</select>
+
+<button
+
+id="step5Btn"
+
+class="mainBtn">
+
+Looks Good 🚀
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- STEP 6 -->
+<!-- ========================= -->
+
+<section class="card" id="step6">
+
+<h1>Food Time 🍕</h1>
+
+<p>Choose wisely... My wallet is watching 👀</p>
+
+<div class="foodGrid">
+
+<div class="food" data-food="Pizza 🍕">
+
+🍕<br>Pizza
+
+</div>
+
+<div class="food" data-food="Sushi 🍣">
+
+🍣<br>Sushi
+
+</div>
+
+<div class="food" data-food="Burger 🍔">
+
+🍔<br>Burger
+
+</div>
+
+<div class="food" data-food="Pasta 🍝">
+
+🍝<br>Pasta
+
+</div>
+
+<div class="food" data-food="Tacos 🌮">
+
+🌮<br>Tacos
+
+</div>
+
+</div>
+
+<p id="warning"></p>
+
+<button
+
+id="contractBtn"
+
+class="mainBtn">
+
+Finalize Date Contract 📄
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- STEP 7 -->
+<!-- ========================= -->
+
+<section class="card" id="step7">
+
+<h1>Generating Contract... 💖</h1>
+
+<p id="loadingText">
+
+Initializing romance...
+
+</p>
+
+<div class="progress">
+
+<div id="progress"></div>
+
+</div>
+
+<div
+
+id="contract"
+
+style="display:none;">
+
+<div class="summary">
+
+<h2>It's a Date! 💕</h2>
+
+<p>
+
+📅
+
+<span id="finalDate"></span>
+
+</p>
+
+<p>
+
+🕒
+
+<span id="finalTime"></span>
+
+</p>
+
+<p>
+
+🍕
+
+<span id="finalFood"></span>
+
+</p>
+
+<hr>
+
+<p>
+
+No cancellation allowed 😤
+
+</p>
+
+<p>
+
+Penalty:
+
+100 Pull-ups 💪
+
+or
+
+Buy next 3 meals 🍔
+
+</p>
+
+</div>
+
+<button
+
+id="copyBtn"
+
+class="mainBtn">
+<div class="loveMeter">
+
+<h3>❤️ AI Compatibility Analysis</h3>
+
+<div class="meter">
+
+<div id="loveFill"></div>
+
+</div>
+
+<h2 id="lovePercent">
+
+0%
+
+</h2>
+
+<p id="loveText">
+
+Analyzing your chemistry... 🧠💕
+
+</p>
+
+</div>
+
+📋 Copy Plan
+
+</button>
+
+<button
+
+id="whatsappBtn"
+
+class="mainBtn whatsapp">
+
+💬 WhatsApp
+
+</button>
+
+</div>
+
+</section>
+style. css
